@@ -41,7 +41,7 @@ function showDots(n) {
         dotsIndex = dots.length;
     }
     for (let d of dots) {
-        d.classList.remove('active');
+        d.classList.remove('active');  
     }   
     dots[dotsIndex - 1].classList.add('active'); 
 }
