@@ -1,6 +1,7 @@
 body{
     background-color: #162831;
     margin: 0px;
+    width: 100%;
 }
 a {
     color: #fff;
@@ -102,58 +103,82 @@ a {
 .slider__wrapper ol{
     align-items: center;
 }
-.slider__items{
+.slider__container{
     display: flex;
     justify-content: space-between;
     padding-top: 100px;
-    position: relative;
+    height: 350px;
+    align-items: center;
 }
-.slider__one{
+.slider__item{
     width: 410px;
     height: 128px;
-    background-color: #095a7a;
+    background-color: #0f3c4e;
     border-radius: 10px;
     padding: 77px 45px 45px 71px;
 }
-.up__text {
+.slider__item p {
+    font-size: 10px;
+    color: rgb(137, 137, 137);
+}
+.up__text{
     font-size: 22px;
-    color: rgb(210, 210, 210);
+    color: rgb(137, 137, 137);
     padding: 0%;
     position: absolute;
     margin-top: -35px;
 }
-.slider__one p{
-    font-size: 10px;
-    color: rgb(210, 210, 210);
-}
-.slider__two{
+.big{
     width: 516px;
     height: 196px;
     background-color: #018ABE;
     border-radius: 10px;
     padding: 88px 60px 60px 56px;
 }
-.slider__two p{
+.big p{
     font-size: 14px;
     color: #fff;
 }
-.up__text__up {
+.big div {
     font-size: 22px;
     color: rgb(255, 255, 255);
     padding: 0%;
     position: absolute;
     margin-top: -35px;
 }
-.slider__three{
+.slider__small{ /* malyk*/
     width: 410px;
     height: 128px;
-    background-color: #095a7a;
+    background-color: #0f3c4e;
     border-radius: 10px;
     padding: 77px 45px 45px 71px;
+    transition: 1.3s;
 }
-.slider__three p{
+.slider__small p{
     font-size: 10px;
-    color: #fff;
+    color: rgb(137, 137, 137);
+    transition: 1.3s;
+}
+.slider__small div {
+    color: rgb(137, 137, 137);
+    transition: 1.3s;
+}
+.slider__big{ /* bolshoy*/
+    width: 516px;
+    height: 196px;
+    background-color: #018ABE;
+    border-radius: 10px;
+    padding: 88px 60px 60px 56px;
+    transition: 1.3s;
+}
+.slider__big p{
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    transition: 1.3s;
+}
+.slider__big div {
+    color: rgb(255, 255, 255);
+    transition: 1.3s;
 }
 .item__squard{
     display: flex;
@@ -161,21 +186,18 @@ a {
     margin-top: 60px;
     padding: 0px;
 }
-.active{
-    background-color: rgb(255, 255, 255);
-    height: 16px;
-    width: 16px;
-    list-style: none;
-    border-radius: 3px;
-    margin: 0px 10px;
-}
-.squard{
+.dots{
     background-color: #214252;
     height: 16px;
     width: 16px;
     list-style: none;
     border-radius: 3px;
     margin: 0px 10px;
+    transition: 0.5s;
+}
+.active{
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
 }
 .link{
     color: #fff;
@@ -189,4 +211,111 @@ a {
 }
 .link:hover {
     background-color: #34637a;
+}
+.container__about__price{
+    width: 1076px;
+    margin: auto;
+    margin-top: 150px;
+}
+.item__about__up{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    align-items: center;
+}
+.item__about__down{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    align-items: center;
+}
+.left__about{
+    width: 466px;
+}
+.upper__text__about{
+    font-family: system-ui;
+    font-size: 24px;
+    color: #fff;
+}
+.text__about{
+    font-family: system-ui;
+    font-size: 13px;
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+.price{
+    margin-top: 150px;
+}
+.price__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+.list li{
+    user-select: none;
+    list-style-type: none;
+    color: #fff;
+    font-family: system-ui;
+    font-size: 16px;
+    line-height: 320%;
+}
+.left__list li:before{
+    content: url(images/Rectangle\ 27.png);
+    margin-right: 20px;
+}
+.container__map{
+    width: 1296px;
+    margin: auto;
+    margin-top: 150px;
+}
+.maps{
+    display: flex;
+}
+.pool__container{
+    margin: 10px;
+}
+.pool{
+    background-color: #018ABE;
+    border-radius: 10px;
+    width: 357px;
+    height: 222px;
+    padding: 35px 45px 35px ;
+    margin-left: 48px;
+}
+.pooL{
+    margin-bottom: 21px;
+}
+.pool__up{
+    font-family: 'El Messiri';
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.pool__down{
+    display: flex;
+    margin-bottom: 30px;
+}
+.pool__down ul{
+    padding: 0px;
+    margin-right: 20px;
+
+}
+.pool__down li{
+    font-family: system-ui;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    list-style-type: none;
+}
+.pool a {
+    padding: 9px 15px;
+    background-color: #fff;
+    border-radius: 3px;
+    color: #018ABE;
+}
+.main__footer{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin: 90px 0px 30px;
 }
