@@ -152,16 +152,16 @@ a {
     background-color: #0f3c4e;
     border-radius: 10px;
     padding: 77px 45px 45px 71px;
-    transition: 1.3s;
+    transition: 0.5s;
 }
 .slider__small p{
     font-size: 10px;
     color: rgb(137, 137, 137);
-    transition: 1.3s;
+    transition: 0.5s;
 }
 .slider__small div {
     color: rgb(137, 137, 137);
-    transition: 1.3s;
+    transition: 0.5s;
 }
 .slider__big{ /* bolshoy*/
     width: 516px;
@@ -169,16 +169,16 @@ a {
     background-color: #018ABE;
     border-radius: 10px;
     padding: 88px 60px 60px 56px;
-    transition: 1.3s;
+    transition: 0.5s;
 }
 .slider__big p{
     font-size: 14px;
     color: rgb(255, 255, 255);
-    transition: 1.3s;
+    transition: 0.5s;
 }
 .slider__big div {
     color: rgb(255, 255, 255);
-    transition: 1.3s;
+    transition: 0.5s;
 }
 .item__squard{
     display: flex;
