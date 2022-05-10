@@ -11,22 +11,43 @@
     <title>RitmStyle</title>
 </head>
 <body>
-    <div class="container">
+    <div class="visible">
+        <div class="im">
+            <div class="import">
+                <div class="exit">x</div>
+                <div class="text__modal">Запись на сеанс</div>
+                <div class="text">
+                    Ваше Имя<br>
+                    <input type="text">
+                </div>
+                <div class="text">
+                    Ваш номер телефона<br>
+                    <input type="tel">
+                </div>
+                <div class="text">
+                    <a class="onload">Отправить</a>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="opacity__back__seans"></div>
+    <div id="container" class="container">
+        <div class="to__the__top">ᐱ</div>
         <div class="header">
             <div class="logo"><img  src="images/Logo.png" alt="logo"></div>
             <div class="header__menu">
                 <ul>
-                    <li><a>Главная</a></li>
-                    <li><a>Сеансы</a></li>
-                    <li><a>Отзывы</a></li>
-                    <li><a>Контакты</a></li>
-                    <li><a>Новости</a></li>
-                    <li><a>Обо мне</a></li>
-                    <li><a>Блог</a></li>
+                    <li><a href="#container">Главная</a></li>
+                    <li><a href="#services">Сеансы</a></li>
+                    <li><a href="#container_reviews">Отзывы</a></li>
+                    <li><a href="">Контакты</a></li>
+                    <li><a href="">Новости</a></li>
+                    <li><a href="">Обо мне</a></li>
+                    <li><a href="">Блог</a></li>
                 </ul>
             </div>
             <div >
-                <a class="button__header">Запись на сеанс</a>
+                <a data-seans class="button__header seans">Запись на сеанс</a>
             </div>
         </div>
         <div class="first__screen">
@@ -36,7 +57,7 @@
             </div>
             <img src="images/aqua.png" alt="aqua">
         </div>
-        <div class="services">
+        <div id="services" class="services">
             <div class="text__sercices">
                 <img class="lap" src="images/RitmStyle.png" alt="">
             </div>
@@ -62,7 +83,7 @@
             </div>
         </div>
     </div>
-    <div class="container__reviews">
+    <div id="container__reviews" class="container__reviews">
         <div class="reviews">
             <div class="reviews__header">
                 <img class="lap" src="images/heading.png" alt="">
@@ -97,7 +118,7 @@
             </div>
         </div>
     </div>
-    <div class="container__about__price">
+    <div id="container__about__price" class="container__about__price">
         <div class="about">
             <img class="lap" src="images/heading__about.png" alt="">
         <div class="item__about__up">
@@ -146,7 +167,7 @@
             </div>
         </div>
     </div>
-    <div class="container__map">
+    <div id="container__map" class="container__map">
         <div class="maps">  
             <div class="">
                 <img src="images/map.png" alt="">
@@ -170,7 +191,7 @@
                             </ul>
                         </div>
                     </div>
-                    <a href="">Записаться на сеанс</a>
+                    <a data-seans class="seans">Записаться на сеанс</a>
                 </div>
                 <div class="pool">
                     <div class="pool__up">Бассейн WorkClass</div>
@@ -190,7 +211,7 @@
                             </ul>
                         </div>
                     </div>
-                    <a href="">Записаться на сеанс</a>
+                    <a data-seans class="seans">Записаться на сеанс</a>
                 </div>
             </div>
         </div>

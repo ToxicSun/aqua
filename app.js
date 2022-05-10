@@ -45,3 +45,35 @@ function showDots(n) {
     }   
     dots[dotsIndex - 1].classList.add('active'); 
 }
+
+const exitModalWindow = document.querySelector('.exit');
+const onloadInfo = document.querySelector('.onload');
+const seans = document.querySelectorAll('[data-seans]');
+const btnSeans = document.querySelectorAll('.seans');
+const modal = document.querySelector('.visible');
+
+function openModalWindow() {
+    modal.style.display = 'block';
+    document.querySelector('.opacity__back__seans').style.display = 'block';
+}
+function closeModalWindow() {
+    modal.style.display = 'none';
+    document.querySelector('.opacity__back__seans').style.display = 'none';
+    document.body.style.overflow = '';
+}
+function onLoad() {
+    modal.style.display = 'none';
+    document.querySelector('.opacity__back__seans').style.display = 'none';
+}
+document.addEventListener('keydown', (e) => {
+    if (e.code === "Escape") {
+        closeModalWindow();
+    }
+});
+
+exitModalWindow.addEventListener('click', closeModalWindow);
+onloadInfo.addEventListener('click', onLoad);
+seans.forEach(btn => {
+    btn.addEventListener('click', openModalWindow); 
+});
+
